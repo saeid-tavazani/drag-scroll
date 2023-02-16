@@ -1,0 +1,29 @@
+body, html {
+	margin: 0;
+}
+
+.scroll-drag {
+	position: relative;
+	width: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	transition: all 0.2s;
+	transform: scale(0.98);
+	user-select: none;
+	cursor: pointer;
+	display: flex;
+}
+
+.scroll-drag.active {
+	cursor: grabbing;
+	transform: scale(1);
+}
+
+.item {
+	background: red;
+	min-height: 250px;
+	min-width: 400px;
+	margin: 2em 1em;
+}
+
